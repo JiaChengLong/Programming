@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加员工</title>
+</head>
+<body>
+    <h3 class="header-title">添加员工</h3>
+    <form action="updateEmp" enctype="multipart/form-data">
+        <input name="id" type="hidden" th:value="${emp.id}">
+        姓名：<input name="name" type="text" th:value="${emp.name}"> <br>
+        年龄：<input name="age" type="text" th:value="${emp.age}"> <br>
+        薪资：<input name="salary" type="text" th:value="${emp.salary}"> <br>
+        部门：<input name="dept" type="text" th:value="${emp.dept}"> <br>
+        电话：<input name="phone" type="text" th:value="${emp.phone}"> <br>
+        生日：<input name="birthday" type="date" th:value="${#dates.format(emp.birthday, 'yyyy-MM-dd')}"> <br>
+        入职如期：<input name="addtime" type="datetime-local" th:value="${#strings.replace(#dates.format(emp.addtime, 'yyyy-MM-dd HH:mm'), ' ', 'T')}"> <br>
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>

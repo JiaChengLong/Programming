@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT xm (#PCDATA)>
+<!ELEMENT xb (#PCDATA)>
+<!ELEMENT zzmm (#PCDATA)>
+<!ELEMENT BirthDate (#PCDATA)>
+<!ELEMENT jg (#PCDATA)>
+<!ELEMENT jzdz (#PCDATA)>
+<!ELEMENT bk (#PCDATA)>
+<!ELEMENT zy (#PCDATA)>
+<!ELEMENT jl (#PCDATA)>
+<!ELEMENT ry (#PCDATA)>
+<!ELEMENT jn (#PCDATA)>
+<!ELEMENT pj (#PCDATA)>
+<!ELEMENT sj (#PCDATA)>
+<!ELEMENT yx (#PCDATA)>

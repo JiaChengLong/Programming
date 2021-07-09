@@ -1,0 +1,78 @@
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--001-->
+<view hidden="{{currentTab!==0}}">
+  <view class="text">
+        <view class="line_y"></view>
+        <text>课程总览</text>
+    </view>
+    <!-- 循环展示 -->
+ 
+  
+  <block wx:for="{{imgs}}">
+  <view class="show_pic">
+    <image  src="http://localhost:8080/{{item.path}}" bindtap="playVideo" id="{{item.name}}" name="{{item.path}}">
+    </image>
+    <view><text>{{item.name}}</text></view>
+  </view>
+  </block>
+
+
+</view>
+ 
+<!--002-->
+<view hidden="{{currentTab!==1}}">
+  <image style="width=50%; height=50%" mode="widthFix" bindtap="playVideofake" src="/image/2001.jpg"></image>
+  <image style="width=50%; height=50%" mode="widthFix" bindtap="playVideofake" src="/image/2007.jpg"></image>
+  <image style="width=50%; height=50%" mode="widthFix" bindtap="playVideofake" src="/image/2008.jpg"></image>
+
+    <!-- <view class="index_anli">
+        <view class="index_anli_v"  data-type="2001">
+          <image mode="widthFix" src="/image/2001.jpg"></image>
+          <text>2001</text>
+        </view> 
+        <view class="index_anli_v"  data-type="2003">
+          <image mode="widthFix" src="/image/2003.jpg"></image>
+          <text>2003</text>
+        </view>
+        <view class="index_anli_v"  data-type="2002">
+          <image mode="widthFix" src="/image/2002.jpg"></image>
+          <text>2002</text>
+        </view>
+       
+        <view class="index_anli_v"  data-type="2004">
+          <image mode="widthFix" src="/image/2004.jpg"></image>
+          <text>2004</text>
+        </view>
+        <view class="index_anli_v"  data-type="2005">
+          <image mode="widthFix" src="/image/2005.jpg"></image>
+          <text>2005</text>
+        </view>
+        <view class="index_anli_v"  data-type="2006">
+          <image mode="widthFix" src="/image/2006.jpg"></image>
+          <text>2006</text>
+        </view>
+         <view class="index_anli_v"  data-type="2007">
+          <image mode="widthFix" src="/image/2007.jpg"></image>
+          <text>2007</text>
+        </view>
+        <view class="index_anli_v"  data-type="2008">
+          <image mode="widthFix" src="/image/2008.jpg"></image>
+          <text>2008</text>
+        </view>
+    </view> -->
+    <view class="container">
+        <text class="daodi">到底了</text>
+    </view>
+</view>
+ 
+<!--003-->
+<view hidden="{{currentTab!==2}}">
+  <image style="width=50%; height=50%" mode="widthFix" bindtap="playVideofake" src="/image/3001.jpg"></image>
+  <image style="width=50%; height=50%" mode="widthFix" bindtap="playVideofake" src="/image/3002.jpg"></image>
+  <image style="width=50%; height=50%" mode="widthFix" bindtap="playVideofake" src="/image/3003.jpg"></image>
+</view>
+

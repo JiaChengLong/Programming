@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<!-- *****************************获取头像************************************ -->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 使用微信号登录 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+<!-- ************************************************************** -->
+ <view class="text">
+        <view class="line_y"></view>
+        <text>广告</text>
+        
+</view> <image mode="widthFix" src="/image/2005.jpg"></image>
+<!-- **********************************点击***************************** -->
+<button bindtap="red">修改颜色</button>
+<!-- *********************************点击end*********************************** -->
+ <view class="text">
+        <view class="line_y"></view>
+        <text>联系方式</text>
+    </view> 
+<view class="contus">
+  <text>公司名称：西安市学不通教育 </text>
+  <text bindtap="calling"> 联系电话：13359166204  [拨打电话]</text>
+  <text> 公司地址：陕西省西安市鄠邑区西安石油大学鄠邑校区</text>
+  <button type="default" bindtap="click">开始导航</button>
+</view>
+<button type="default" bindtap="calling">点击拨打客服电话</button>
+<view class="jishuzc">技术支持：西安学不通科技</view>

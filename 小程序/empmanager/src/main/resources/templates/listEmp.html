@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Emp-list...</h1>
+	
+    <div th:each="emp : ${emps}">
+        <span th:text="${emp.id}"></span>
+        <span th:text="${emp.name}"></span>
+        <span th:text="${emp.age}"></span>
+        <span th:text="${emp.salary}"></span>
+        <span th:text="${emp.dept}"></span>
+        <span th:text="${emp.phone}"></span>
+    </div>
+</body>
+</html>

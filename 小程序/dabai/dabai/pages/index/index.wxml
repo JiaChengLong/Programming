@@ -1,0 +1,103 @@
+<!--index.wxml-->
+<import src="../../template/item-template.wxml"/>
+<view class="container">
+    <view class="section section_gap swiper_box">
+        <template is="index_index_scroll_tmpl" data="{{...index_index_scroll_tmpl}}"/>
+    </view>
+
+    <view class="text">
+        <view class="line_y"></view>
+        <text>服务范围</text>
+    </view> 
+    <view class="box">
+       <!-- <template is="index_index_navs_tmpl" data="{{...index_index_navs_tmpl}}"/> -->
+       <button class="button1"type="primary" style="background-color: gray;">
+        客服
+        </button>
+    </view>
+    
+    <view class="text">
+        <view class="line_y"></view>
+        <text>课程推荐</text>
+    </view>
+
+    <view bindtap="playvideo">
+      <image src="/image/2003.jpg"></image>
+    </view>
+
+
+   <!-- <view class="index_anli">
+
+<view class="index_anli_v"  data-type="1001" bindtap="playvideo" url="{{urls}}"id="{{item.path}}">
+          <image mode="widthFix" src="/image/2001.jpg"></image>
+          <text>{{item.name}}</text>
+</view>
+
+         <view class="index_anli_v"  data-type="1002" bindtap="video">
+          <image mode="widthFix" src="/image/2002.jpg"></image>
+          <text>1002</text>
+        </view>
+        <view class="index_anli_v"  data-type="1003" bindtap="video">
+          <image mode='widthFix' src="/image2003.jpg"></image>
+          <text>1003</text>
+        </view>
+        <view class="index_anli_v"  data-type="1004" bindtap="video">
+          <image mode='widthFix' src="/image/2004.jpg"></image>
+          <text>1004</text>
+        </view>
+         <view class="index_anli_v"  data-type="1005" bindtap="video">
+          <image mode="widthFix" src="/image/2005.jpg"></image>
+          <text>1005</text>
+        </view>
+        <view class="index_anli_v"  data-type="1006" bindtap="video">
+          <image mode="widthFix" src="/image/2006.jpg"></image>
+          <text>1006</text>
+        </view>
+    </view> -->
+
+    <view class="text">
+        <view class="line_y"></view>
+        <text>益智训练</text>
+    </view>
+    <view>
+      <image src="/image/2002.jpg"></image>
+    </view>
+    <!-- <view class="index_anli">
+        <view class="index_anli_v"  data-type="1007" bindtap="book">
+          <image mode="widthFix" src="/image/3001.jpg"></image>
+          <text>1007</text>
+        </view>
+      <view class="index_anli_v"  data-type="1008" bindtap="book">
+          <image mode="widthFix" src="/image/3002.jpg"></image>
+          <text>1008</text>
+        </view>
+        <view class="index_anli_v"  data-type="1009" bindtap="book">
+          <image mode="widthFix" src="/image/3003.jpg"></image>
+          <text>1009</text>
+        </view>
+        <view class="index_anli_v"  data-type="1010" bindtap="book">
+          <image mode="widthFix" src="/image/3004.jpg"></image>
+          <text>1010</text>
+        </view>
+        <view class="index_anli_v"  data-type="1011" bindtap="book">
+          <image mode="widthFix" src="/image/3005.jpg"></image>
+          <text>1011</text>
+        </view>
+        <view class="index_anli_v"  data-type="1012" bindtap="book">
+          <image mode="widthFix" src="/image/3006.jpg"></image>
+          <text>1012</text>
+        </view>
+    </view> -->
+        <view class="text">
+        <view class="line_y"></view>
+        <text>联系我们</text>
+    </view>
+<view class="contus">
+  <text>公司名称：西安学不通科技 </text>
+  <text bindtap="calling"> 联系电话：13359166204  [拨打电话]</text>
+  <text> 公司地址：陕西省西安市鄠邑区西安石油大学鄠邑校区</text>
+  <button type="default" bindtap="click">开始导航</button>
+</view>
+<view class="jishuzc">技术支持：西安学不通科技</view>
+</view>
+

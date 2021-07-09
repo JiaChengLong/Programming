@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!ENTITY writer SYSTEM "./resume.dtd">
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Resume</title>
+	<style>
+		p{
+			color:skyblue;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="./resume.css">
+</head>
+
+<body>
+	<!--<link> 标签最常见的用途是链接样式表,水平对齐用align="center",-->
+<form action="resume.jsp" method="GET" target="_blank">
+	
+	<table width="800" align="center" >
+			<tr>
+				<td>
+					<img src="1.jpg" width="600" height="180" alt="图片" align="left">
+				</td>
+			</tr>
+
+			<a style="position:absolute; left:550px; top:110px;"><input type="text" name="姓名" id="xm" style="height: 50px;width: 100px;font-size:33px;color:skyblue;" value="贾成龙"></a>
+
+		</table>
+
+		<table align="center" width="800" border="0">
+			<tr>
+				<td width="200" height="100"></td>
+				<td><p>个人资料</p> 性别：
+				<input type="radio" name="性别" value="男" checked>男
+				<input type="radio" name="性别" value="女">女 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				政治面貌：<select name="政治面貌" id="zzmm"> <option value="群众">群众 <option value="共青团员"selected>共青团员 <option value="共产党员">共产党员</select> <br>
+				<br>出生日期：<input type="date" name="出生日期" id="BirthDate" value="1999-10-08" ></br>
+				<br>籍贯：<input type="text" name="籍贯" id="jg" size="22" value="河北省定州市" ></br>			
+				<br>居住地址：<input type="text" name="居住地址" id="jzdz" size="30" value="陕西省鄠邑区西安石油大学"></td>				
+			</tr>
+			
+			<tr>
+				<td width="200" height="50"></td>
+				<td>
+					<p>教育背景</p> 本科：<input type="text" name="本科" id="bk" size="15" value="西安石油大学" >  专业：<input type="text" name="专业" id="zy" size="20" value="计算机科学与技术" >
+				</td>
+			</tr>
+			
+			<tr>
+				<td>				
+				</td>
+				<td>
+					<p>工作/实习经历</p> <textarea wrap=hard class="style1" name="工作/实习经历" id="jl" rows=10 cols=60 >1.用C++做过学生成绩管理系统
+2.用Java和mysql结合做过图书信息管理系统和科研论文管理系统</textarea>
+				</td>
+			</tr>
+						
+			<tr>				
+				<td>
+					<img src="3.png" width="47" height="51" alt="图片" align="left">&nbsp;手机:
+					<a style="position:absolute; left:415px; top:800px;"><input type="text" name="手机" id="sj" size="10" value="13722291447"></a>
+				</td>
+				<td>
+					<p>获得荣誉/证书</p> <textarea wrap=hard class="style1" name="获得荣誉/证书" id="ry" rows=10 cols=60>1.通过英语四级考试
+2.在2019至2020学年获得“三好学生”荣誉证书
+3.在2019至2020学年获得品学兼优三等奖及荣誉证书</textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<img src="5.png" width="51" height="48" alt="图片" align="left">&nbsp;邮箱:
+					<a style="position:absolute; left:415px; top:1010px;"><input type="text" name="手机" id="yx" size="17" value="1259389730@qq.com"></a>
+				</td>
+				<td>
+					<p>专业技能</p> <textarea wrap=hard class="style1" name="专业技能" id="jn" rows=10 cols=60>1.掌握C/C++/java的使用
+2.会使用MySQL数据库和用Navicat操纵数据库
+3.会用html，css，JavaScript制作网页</textarea>
+				</td>
+			</tr>
+			
+			<tr>
+				<td width="200" height="50"></td>
+				<td>
+					<p>个人评价</p> <textarea wrap=hard class="style1" name="个人评价" id="pj" rows=10 cols=60>1.做事认真
+2.为人友善，爱合作</textarea>
+				</td>
+			</tr>
+		</table>
+		<center>
+		<input type="submit" value="提交">
+		</center>
+</form>
+		<center>
+		<button onclick="displayxml()">生成xml文件</button>
+		</center>
+		<script src="./resume.js"></script>
+	
+</body>
+</html>
+
+	

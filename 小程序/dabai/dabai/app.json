@@ -1,0 +1,55 @@
+
+
+
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/index",
+    "pages/i/index",
+    "pages/logs/logs",
+   "pages/video/video",
+    "pages/book/book",
+    "pages/userupload/userupload"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "学不通教育",
+    "navigationBarBackgroundColor": "#ff9933"
+    
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/ico_1_2.png",
+        "selectedIconPath": "image/ico_1_1.png",
+        "text": "首页资讯"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "iconPath": "image/ico_2_2.png",
+        "selectedIconPath": "image/ico_2_1.png",
+        "text": "课程页面"
+      },
+      {
+        "pagePath": "pages/i/index",
+        "iconPath": "image/ico_4_2.png",
+        "selectedIconPath": "image/ico_4_1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

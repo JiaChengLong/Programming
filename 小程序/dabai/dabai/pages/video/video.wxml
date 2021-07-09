@@ -1,0 +1,47 @@
+<!--pages/video/video.wxml-->
+<view class="box">
+  <view>
+  <video  class="Vvideo" src="http://localhost:8080/videos/{{video_src}}.mp4" id="myvideo" enable-danmu 
+      danmu-btn controls></video>
+  </view>
+  <!-- ************************************发送弹幕****************************************** -->
+  <view class="bbox">
+  <input class="Vinput" bindblur="bindInputBlur" type="text" placeholder="在此处输入弹幕内容"style="font-size:16px; height:30px" />
+  <button class="Vbutton" bindtap="bindSendDanmu" type="primary"formType="submit" style=" font-size:16px; height:30px;background-color:lightcoral">发送</button>
+  </view>
+</view>
+<!-- **********************************输入评论*************************************** -->
+<view class="pinlun"> 
+  <view class="up">
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+   <view class="down" id="userInfo">
+<!-- ---------------------输入框------------------------ -->
+
+  <view class="down_left">
+    <input type="text" name="nickName" value="{{nickName}}" style="display: none"/>
+    <textarea bindinput="titleInput" class="down_text" type="textarea" name="content"  placeholder="在此处输入您的评论，请和谐发言！"></textarea>
+  </view>
+  <!-- -------------------输入框end-------------------- -->
+  <view class="down_right">
+ <button style=" font-size:16px; height:30px;background-color:lightcoral" bindtap="user_submit" id="{{userInfo.nickName}}" form-type="submit">提交</button>
+ <button style=" font-size:16px; height:30px;background-color:lightcoral; margin-top:5px;" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">登录</button>
+ </view>
+  </view>
+  
+</view>
+<!-- ***********************************显示评论************************************* -->
+<view class="user_pinlun">
+  <block wx:for="{{Comments}}">
+  
+  <view class="user_id" style="color:#FF66CC">{{item.username}}: </view>
+  <view class="user_words">{{item.content}}</view>
+
+</block>
+</view>
+
+
+
+
+

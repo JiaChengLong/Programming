@@ -1,0 +1,39 @@
+<view class="index">
+    <view class="head">
+        <view class="title">书籍页面</view>
+        <view class="desc" bindtap="calling">服务电话：13359166204  [拨打电话]</view>
+        
+    </view>
+     <view class="text">
+        <view class="line_y"></view>
+        <text>书籍</text>
+    </view>
+    <!-- <view class="index_anli">
+
+        <view class="index_anli_v"  data-type="3001" bindtap="book">
+          <image mode="widthFix" src="/image/3001.jpg"></image>
+          <text>3001</text>
+        </view>
+        <view class="index_anli_v"  data-type="3002" bindtap="book">
+          <image mode="widthFix" src="/image/3002.jpg"></image>
+          <text>3002</text>
+        </view>
+        <view class="index_anli_v"  data-type="3003" bindtap="book">
+          <image mode="widthFix" src="/image/3003.jpg"></image>
+          <text>3003</text>
+        </view>
+        <view class="index_anli_v"  data-type="3004" bindtap="book">
+          <image mode="widthFix" src="/image/3004.jpg"></image>
+          <text>3004</text>
+        </view>
+         <view class="index_anli_v"  data-type="3005" bindtap="book">
+          <image mode="widthFix" src="/image/3005.jpg"></image>
+          <text>3005</text>
+        </view>
+        <view class="index_anli_v"  data-type="3006" bindtap="book">
+          <image mode="widthFix" src="/image/3006.png"></image>
+          <text>3006</text>
+        </view>
+    </view> -->
+    <view class="jishuzc">技术支持：西安学不通科技</view>
+</view>

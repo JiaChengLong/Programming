@@ -1,0 +1,89 @@
+/* pages/video/video.wxss */
+.Vvideo{
+  display: flex;
+  width: 100%;
+}
+
+/* **************************************发送弹幕*************************** */
+.box{
+  display: flex;
+  flex-direction: column;
+}
+.bbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Vinput{
+  margin-top: 10px;
+  margin-left: 2%;
+  border:1px solid #ec8ee0;
+  border-left:none; border-right: none;
+  width: 75%;
+  line-height: 20px;
+  /* border-radius: 10px; */
+}
+
+.Vbutton{
+  margin-top: 10px;
+  width: 20%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: lightcoral;
+}
+/* ********************************发送评论区************************************* */
+.pinlun{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #CCCCFF;
+  border-left: none;border-right: none;border-top:none ;
+  height: 100px;
+  margin-top: 10px;
+}
+.up{
+  display: flex;
+  width: 100%;
+  border: none;
+  margin-bottom: 2px;
+}
+.down{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.down_text{
+  height: 70px;
+}
+.down_left{
+  display: flex;
+  width: 75%;
+  border: 1px solid;
+  margin-left: 2%;
+}
+.down_right{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 160rpx;
+  line-height: 80rpx;
+  
+  
+}
+/* ***************************************显示评论******************************** */
+.user_pinlun{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid gray;
+  border-left:none ;border-right: none;border-top: none;
+}
+
+.user.id{
+  display: flex;
+  margin-top:20px ;
+ 
+}
+.user_words{
+  display: flex;
+  margin-left: 15px;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Table Basic - srtdash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <!-- amchart css -->
+    <link rel="stylesheet" href="assets/css/export.css" type="text/css" media="all" />
+    <!-- others css -->
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+   
+<div class="card-body">
+      <h4 class="header-title">员工管理</h4>
+      <a href="addEmpForm">添加员工</a>
+      <div class="single-table">
+          <div class="table-responsive">
+              <table class="table text-center">
+                  <thead class="text-uppercase bg-secondary">
+                      <tr class="text-white">
+                          <th scope="col">ID</th>
+                          <th scope="col">员工姓名</th>
+                          <th scope="col">年龄</th>
+                          <th scope="col">薪资</th>
+                          <th scope="col">部门</th>
+                          <th scope="col">手机号码</th>
+                          <th scope="col">生日</th>
+                          <th scope="col">入职时间</th>
+                          <th scope="col">操作</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                       <tr th:each="emp : ${emps}">
+					        <td th:text="${emp.id}"></td>
+					        <td th:text="${emp.name}"></td>
+					        <td th:text="${emp.age}"></td>
+					        <td th:text="${emp.salary}"></td>
+					        <td th:text="${emp.dept}"></td>
+					        <td th:text="${emp.phone}"></td>
+
+					        <td th:text="${#dates.format(emp.birthday, 'yyyy-MM-dd')}"></td>
+					        <td th:text="${#dates.format(emp.addtime, 'yyyy-MM-dd HH:mm:ss')}"></td>
+					        <td>
+                                <a th:href="@{'updateEmpForm?empId='+${emp.id}}">修改</a>
+                                <a th:href="@{'deleteEmp?empId='+${emp.id}}">删除</a>
+
+                            </td>
+					    </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
+      </div>
+</div>
+    <!-- offset area end -->
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- others plugins -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
